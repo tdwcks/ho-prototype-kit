@@ -135,6 +135,6 @@ router.post('/search-for-people', function (req, res) {
 
 })
 
-require(`./views/design-system/_routes.js`)(router)
+// require(`./views/design-system/_routes.js`)(router)
 
 module.exports = router
