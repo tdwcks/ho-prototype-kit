@@ -1,0 +1,53 @@
+{% extends "layout-signed-out.html" %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <h1 class="govuk-heading-xl">Acme System Name</h1>
+    <h1 class="govuk-heading-m">Sign in</h1>
+
+    <form action="DFO-dash" method="post" novalidate>
+      <div class="govuk-form-group">
+
+        <label class="govuk-label govuk-label--s" for="DFO-email">
+          Email
+        </label>
+        <div id="DFO-email-hint" class="govuk-hint">
+          Must contain <b>pnn.police.uk</b> in the address
+        </div>
+        <input class="govuk-input govuk-input--width-20" id="DFO-email"
+          name="DFO-email" type="text" aria-describedby="DFO-email-hint">
+        <p></p>
+        <label class="govuk-label govuk-label--s" for="DFO-email">
+          Password
+        </label>
+        <div id="DFO-password-hint" class="govuk-hint">
+          Must contain 8 characters, 2 numbers and one special character
+        </div>
+        <input class="govuk-input govuk-input--width-20" id="DFO-password-hint"
+          name="DFO-password-hint" type="text"
+          aria-describedby="DFO-password-hint">
+
+      </div>
+      <button class="govuk-button" data-module="govuk-button">
+        Continue
+      </button>
+    </form>
+
+
+  </div>
+
+
+  </form>
+
+
+
+</div>
+</div>
+
+{% endblock %}
