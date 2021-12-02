@@ -1,0 +1,123 @@
+{% extends "layout-entitysearch.html" %}
+
+{% block pageTitle %}
+HO Prototype Kit
+{% endblock %}
+
+{% block header %}
+<!-- Header HTML -->
+<header>
+  <div class="wrapper-header">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-full govuk-sixteen_grid">
+        <div class="row">
+          <div class="eight columns">
+            <div class="header-title">
+              <a href="/" class="header-name">
+                <h3 class="govuk-heading-l">IDIOM</h3>
+              </a>
+              <p>Offender Management system</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="govuk-grid-column-full govuk-sixteen_grid">
+        <div class="row border-top">
+          <div class="twelve columns">
+            <button type="button"
+              class="govuk-header__menu-button govuk-js-header-toggle"
+              aria-controls="navigation"
+              aria-label="Show or hide navigation menu">Menu</button>
+            <nav>
+              <ul id="navigation" class="govuk-header__navigation "
+                aria-label="Navigation menu">
+                <li class="govuk-header__navigation-item">
+                  <a class="govuk-header__link" href="#">
+                    Get started
+                  </a>
+                </li>
+                <li class="govuk-header__navigation-item">
+                  <a class="govuk-header__link" href="#">
+                    Examples
+                  </a>
+                </li>
+                <li class="govuk-header__navigation-item">
+                  <a class="govuk-header__link" href="#">
+                    Resources
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="four columns">
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+{% endblock %}
+
+
+{% block content %}
+
+
+<div class="govuk-grid-row HO-uk-margin-top-5 HO-uk-margin-bottom-1">
+  <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-heading-xxl">
+      Home Office prototype kit
+    </h1>
+    <p class="govuk-body-l">
+      Prototype Home Office services to test with users
+    </p>
+  </div>
+</div>
+
+<!-- <hr class="HO-uk-margin-top-5 HO-uk-margin-bottom-5" /> -->
+
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-one-third">
+    <div class="side-container">
+      <h3 class="govuk-heading-l HO-uk-margin-bottom-1">
+        About
+      </h3>
+
+      <a class="govuk-link" href="/history/rules.html">
+        Descriptions
+      </a>
+    </div>
+  </div>
+  <div class="govuk-grid-column-one-third">
+    <div class="side-container">
+      <h3 class="govuk-heading-l HO-uk-margin-bottom-1">
+        Examples and templates
+      </h3>
+
+      <a class="govuk-link" href=".html">
+
+      </a>
+    </div>
+  </div>
+  <div class="govuk-grid-column-one-third">
+    <div class="side-container">
+      <h3 class="govuk-heading-l HO-uk-margin-bottom-1">
+        Support
+
+      </h3>
+
+      <a class="govuk-link" href="support.html">
+        View
+      </a>
+    </div>
+  </div>
+</div>
+
+
+
+<hr class="HO-uk-margin-top-7 HO-uk-margin-bottom-7" />
+
+
+{% endblock %}

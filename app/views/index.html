@@ -1,123 +1,98 @@
-{% extends "layout-entitysearch.html" %}
+{% extends "layout.html" %}
 
 {% block pageTitle %}
-HO Prototype Kit
+PPPT Prototype Kit & Component Library
 {% endblock %}
-
-{% block header %}
-<!-- Header HTML -->
-<header>
-  <div class="wrapper-header">
-    <div class="govuk-grid-row">
-      <div class="govuk-grid-column-full govuk-sixteen_grid">
-        <div class="row">
-          <div class="eight columns">
-            <div class="header-title">
-              <a href="/" class="header-name">
-                <h3 class="govuk-heading-l">IDIOM</h3>
-              </a>
-              <p>Offender Management system</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="govuk-grid-column-full govuk-sixteen_grid">
-        <div class="row border-top">
-          <div class="twelve columns">
-            <button type="button"
-              class="govuk-header__menu-button govuk-js-header-toggle"
-              aria-controls="navigation"
-              aria-label="Show or hide navigation menu">Menu</button>
-            <nav>
-              <ul id="navigation" class="govuk-header__navigation "
-                aria-label="Navigation menu">
-                <li class="govuk-header__navigation-item">
-                  <a class="govuk-header__link" href="#">
-                    Get started
-                  </a>
-                </li>
-                <li class="govuk-header__navigation-item">
-                  <a class="govuk-header__link" href="#">
-                    Examples
-                  </a>
-                </li>
-                <li class="govuk-header__navigation-item">
-                  <a class="govuk-header__link" href="#">
-                    Resources
-                  </a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-          <div class="four columns">
-
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</header>
-{% endblock %}
-
 
 {% block content %}
 
-
-<div class="govuk-grid-row HO-uk-margin-top-5 HO-uk-margin-bottom-1">
-  <div class="govuk-grid-column-two-thirds">
-
-    <h1 class="govuk-heading-xxl">
-      Home Office prototype kit
-    </h1>
-    <p class="govuk-body-l">
-      Prototype Home Office services to test with users
-    </p>
-  </div>
-</div>
-
-<!-- <hr class="HO-uk-margin-top-5 HO-uk-margin-bottom-5" /> -->
-
-
 <div class="govuk-grid-row">
-  <div class="govuk-grid-column-one-third">
-    <div class="side-container">
-      <h3 class="govuk-heading-l HO-uk-margin-bottom-1">
-        About
-      </h3>
+  <div class="govuk-grid-column-two-thirds">
+    <span class="govuk-caption-m">Policing and Public Protection Technology
+    </span>
+    <h1 class="govuk-heading-xl">
+      PPPT Component Library
+    </h1>
+    <p></p>
+    <p class="govuk-body-l">A single source of truth for user interface
+      components and interaction patterns across
+      policing services</p>
+    <p>This site is aimed at interaction designers to help with speedy setup of
+      on brand PPPT prototypes. To get started as quick as possible take a copy
+      of this repo and use it to start creating your prototypes. It is built
+      upon the Home Office internal Design System which is in term built upon
+      <a href="https://design-system.service.gov.uk/">GDS's Design System.</a>
+    </p>
 
-      <a class="govuk-link" href="/history/rules.html">
-        Descriptions
-      </a>
-    </div>
+    <h3 class="govuk-heading-m">Templates</h3>
+
+    <h3 class="govuk-heading-s">Basic pages</h3>
+    <ul class="govuk-list govuk-list--bullet">
+      <li>Example standard <a href="./templates/example-internal-page">internal
+          page.</a>
+      </li>
+      <li>Example standard internal
+        page with <a href="./templates/example-internal-inputs">input
+          elements.</a>
+      </li>
+      <li>Example rudimentary <a href="./templates/sign-in-page">sign in
+          page.</a>
+      </li>
+      <li>Example sectional <a href="./templates/example-card-grid">grid
+          page.</a>
+      </li>
+      <li>Example home or <a href="./templates/example-homepage">dashboard
+          page.</a>
+      </li>
+
+    </ul>
+
+    <h3 class="govuk-heading-m">Components</h3>
+
+    <h3 class="govuk-heading-s">Basic Components</h3>
+    <ul class="govuk-list govuk-list--bullet">
+      <li><a href="./components/nav-header">Navigation header</a>
+      </li>
+      <li><a href="./components/cards">Cards</a>
+      </li>
+      <li><a href="./components/tab-navigation">Tabs</a>
+      </li>
+      <li><a href="./components/tags">Tags</a>
+      </li>
+      <li>PNC input <a href="#">example</a>
+      </li>
+
+    </ul>
+
+    <h3 class="govuk-heading-m">Patterns</h3>
+
+    <h3 class="govuk-heading-s">How to check for duplicates</h3>
+    <ul class="govuk-list govuk-list--bullet">
+      <li>Checking for <a href="#">duplicate records</a> before creating a new
+        one.
+      </li>
+      <li><a href="#">Record page</a>
+      </li>
+
+    </ul>
+
   </div>
+
   <div class="govuk-grid-column-one-third">
-    <div class="side-container">
-      <h3 class="govuk-heading-l HO-uk-margin-bottom-1">
-        Examples and templates
-      </h3>
+    <h2 class="govuk-heading-s">Note to developers</h2>
 
-      <a class="govuk-link" href=".html">
-
-      </a>
-    </div>
-  </div>
-  <div class="govuk-grid-column-one-third">
-    <div class="side-container">
-      <h3 class="govuk-heading-l HO-uk-margin-bottom-1">
-        Support
-
-      </h3>
-
-      <a class="govuk-link" href="support.html">
-        View
-      </a>
-    </div>
+    <p style="font-size:1.6rem;">
+      This prototype kit is an extension of the base <a
+        href="https://design.homeoffice.gov.uk/">Home Office prototyping
+        kit.</a>
+      All code is not production code. The information held here is just for
+      guidance to designers, business analysts and developers to understand the
+      predefined components available to teams in PPPT. </p>
+    <p style="font-size:1.6rem;"">There is
+      <b>no real data</b> or any integrations with real data. This site is not connected to any APIs
+      or sensitive
+      information policing information. Everything here is for demonstration only.</p> <br>
   </div>
 </div>
-
-
-
-<hr class="HO-uk-margin-top-7 HO-uk-margin-bottom-7" />
-
 
 {% endblock %}
